@@ -1,0 +1,15 @@
+{
+  "name": "exifier",
+  "version": "1.0.0",
+  "description": "Extracts meta headers from JPEGs, decorates it with SOI and EOI and saves as JPEG file - handy to test exif parsers.",
+  "main": "index.js",
+  "author": "Davit Barbakadze",
+  "license": "MIT",
+
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "glob": "5.0.x"
+  }
+}
