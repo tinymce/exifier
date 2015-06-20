@@ -40,7 +40,7 @@ glob(baseDir+"/*.+(jpg|jpeg)", { nocase: true }, function (er, files) {
 				idx += headers[i].length;
 			}
 
-			var outFile = path.join("out", path.basename(file));
+			var outFile = path.join("out", path.basename(file, path.extname(file)) + '.jpg');
 			fs.writeFileSync(outFile, SOI);
 			fs.appendFileSync(outFile, new Buffer(new Uint8Array(br.SEGMENT())));
 			fs.appendFileSync(outFile, EOI);
