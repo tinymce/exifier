@@ -29,6 +29,7 @@ function ArrayBufferReader(data) {
 					this.clear();
 					data = arr.buffer;
 					_dv = new DataView(data);
+					break;
 				}
 
 			default: return data;
